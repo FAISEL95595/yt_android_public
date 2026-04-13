@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">YT Downloader Pro</string>
+    <string name="menu_login">تسجيل الدخول إلى يوتيوب</string>
+    <string name="menu_settings">الإعدادات</string>
+    <string name="menu_support">☕ دعم التطوير</string>
+    <string name="hint_enter_url">أدخل الرابط هنا</string>
+    <string name="btn_analyze">تحليل الرابط</string>
+    <string name="title_options">خيارات التحميل</string>
+    <string name="label_format">الصيغة:</string>
+    <string name="label_video_quality">جودة الفيديو:</string>
+    <string name="label_audio_quality">جودة الصوت:</string>
+    <string name="cb_skip_ssl">تخطي فحص SSL</string>
+    <string name="cb_metadata">حفظ البيانات الوصفية (صوت)</string>
+    <string name="label_trim">قص الوقت (اختياري):</string>
+    <string name="hint_start_time">البداية (مثلاً: 00:30)</string>
+    <string name="hint_end_time">النهاية (مثلاً: 01:30)</string>
+    <string name="btn_start_download">بدء التحميل</string>
+    <string name="btn_go_to_downloads">الذهاب إلى التنزيلات</string>
+    <string name="btn_clear_all">مسح الكل</string>
+    <string name="header_downloads">التنزيلات</string>
+    <string name="btn_open">فتح</string>
+    <string name="btn_pause">إيقاف مؤقت</string>
+    <string name="btn_resume">استئناف</string>
+    <string name="btn_cancel">إلغاء</string>
+    <string name="status_pending">قيد الانتظار…</string>
+    <string name="status_downloading">جاري التحميل… %1$d%%</string>
+    <string name="status_paused">متوقف مؤقتاً (%1$d%%)</string>
+    <string name="status_completed">اكتمل</string>
+    <string name="status_failed">فشل</string>
+    <string name="title_settings">الإعدادات</string>
+    <string name="switch_dark_mode">الوضع الليلي</string>
+    <string name="label_save_location">موقع الحفظ الحالي:</string>
+    <string name="btn_choose_folder">اختر مجلد جديد</string>
+    <string name="label_default_format">نوع التحميل الافتراضي:</string>
+    <string name="format_video">فيديو</string>
+    <string name="format_audio">صوت</string>
+    <string name="title_playlist_sheet">اختر الفيديوهات</string>
+    <string name="label_select_all">تحديد الكل</string>
+    <string name="btn_download_selected">تحميل المحدد</string>
+    <string name="toast_enter_url">يرجى إدخال الرابط</string>
+    <string name="toast_processing">جاري المعالجة…</string>
+    <string name="toast_parse_error">خطأ في تحليل الرابط</string>
+    <string name="toast_added_to_queue">تمت إضافة التحميل إلى القائمة</string>
+    <string name="donate_title">هل تستمتع بالتطبيق؟ ☕</string>
+    <string name="donate_msg">أهلاً! هل تستمتع بالبرنامج؟ لقد استثمرنا ساعات طويلة هنا من أجلك. هل ترغب في دعم المطور بكوب من القهوة؟</string>
+    <string name="donate_yes">بالتأكيد، بكل سرور!</string>
+    <string name="donate_later">ربما لاحقاً</string>
+    <string name="donate_never">لا تسألني مرة أخرى</string>
+    <string name="error_no_app">لم يتم العثور على تطبيق مناسب لتشغيل الملف</string>
+    <string name="open_with">فتح بواسطة</string>
+    <string name="storage_locaion">/storage/emulated/0/Download</string>
+    <string name="btn_open_playlist_folder">فتح مجلد قائمة التشغيل</string>
+    <string name="label_choose_quality">اختر الجودة:</string>
+    <string name="cb_metadata_full">تضمين البيانات الوصفية (الصورة والتفاصيل)</string>
+    <string name="toast_permission_denied">إذن التخزين مطلوب لتحميل الملفات</string>
+    <string name="status_analyzing_no_ssl">جاري تحليل الرابط بدون فحص SSL…</string>
+    <string name="status_analyzing">جاري تحليل الرابط…</string>
+    <string name="toast_playlist_empty">لم يتم العثور على فيديوهات صالحة في القائمة</string>
+    <string name="toast_load_error">خطأ في التحميل: تحقق من الرابط أو الشبكة</string>
+    <string name="bot_block_title">تم اكتشاف حظر للروبوتات</string>
+    <string name="bot_block_msg">اكتشف الخادم محاولة تحميل تلقائي ويطلب التحقق. لمتابعة التحميل، يرجى تسجيل الدخول إلى حسابك (سيقوم التطبيق بحفظ ملفات تعريف الارتباط لتجاوز الحظر).</string>
+    <string name="btn_login_now">تسجيل الدخول الآن</string>
+    <string name="toast_added_multiple_to_queue">تمت إضافة %1$d فيديو إلى القائمة</string>
+    <string name="toast_no_browser">لم يتم العثور على متصفح لفتح الرابط</string>
+    <string name="toast_donate_never_again">حسناً، لن نزعجك مرة أخرى! استمتع بالتطبيق.</string>
+    <string name="default_playlist_name">قائمة تشغيل</string>
+    <string name="playlist_title_format">📁 %1$s (%2$d ملفات)</string>
+    <string name="status_in_progress">جاري العمل… %1$d%%</string>
+    <string name="tree_branch_prefix">  └ %1$s</string>
+    <string name="format_audio_with_icon">🎵 صوت</string>
+    <string name="format_video_with_icon">🎬 فيديو</string>
+    <string name="quality_best_short">الأفضل</string>
+    <string name="status_downloading_progress">جاري التحميل… %1$d%%</string>
+    <string name="status_paused_progress">متوقف مؤقتاً (%1$d%%)</string>
+    <string name="toast_cleared_completed_failed">تم مسح جميع التنزيلات المكتملة أو الفاشلة</string>
+    <string name="toast_cannot_delete_active">لا يمكن حذف تنزيل نشط. قم بإلغائه أولاً.</string>
+    <string name="toast_playlist_deleted">تم حذف قائمة التشغيل</string>
+    <string name="toast_cannot_delete_active_playlist">تحتوي قائمة التشغيل على تنزيلات نشطة. قم بإلغائها أولاً.</string>
+    <string name="toast_file_not_found">الملف غير موجود</string>
+    <string name="title_login_activity">تسجيل الدخول إلى يوتيوب</string>
+    <string name="title_downloads_activity">قائمة التحميل</string>
+    <string name="title_settings_activity">الإعدادات</string>
+    <string name="notification_downloading_queue">جاري تحميل الملفات في القائمة…</string>
+    <string name="label_language_setting">Language / שפת האפליקציה:</string>
+    <string name="hint_paste_link">الصق الرابط هنا…</string>
+    <string name="notification_channel_name">التنزيلات</string>
+    <string name="toast_cannot_open_explorer">تعذر فتح متصفح الملفات. المسار:\n%1$s</string>
+    <string name="quality_best">الأفضل متاح (Best)</string>
+    <string name="quality_medium">متوسط (Medium)</string>
+    <string name="quality_low">منخفض (Low)</string>
+    <string name="label_max_concurrent">التنزيلات المتزامنة: %1$d</string>
+    <string name="chooser_save_folder">اختر مجلد الحفظ</string>
+    <string name="update_available_title">الإصدار %1$s متاح!</string>
+    <string name="update_available_msg">تتوفر نسخة جديدة للتنزيل. يوصى بالتحديث للاستمتاع بالإصلاحات والتحسينات.</string>
+    <string name="btn_download_update">تنزيل وتثبيت الآن</string>
+    <string name="btn_no_thanks">لا شكراً</string>
+    <string name="btn_dont_show_again">لا تظهر مرة أخرى</string>
+    <string name="toast_updates_disabled">تم إيقاف إشعارات التحديث</string>
+    <string name="menu_update">التحقق من وجود تحديثات</string>
+    <string name="toast_up_to_date">التطبيق محدث لآخر إصدار.</string>
+    <string name="label_loading_info">جاري تحميل المعلومات…</string>
+    <string name="btn_share_settings">إعدادات المشاركة</string>
+    <string name="status_loading_info">جاري التحميل…</string>
+    <string name="pref_category_defaults">الإعدادات الافتراضية</string>
+    <string name="switch_auto_start_on_share">بدء التحميل تلقائياً عند المشاركة</string>
+    <string name="switch_playlist_subfolder">إنشاء مجلد منفصل لكل قائمة تشغيل</string>
+    <string name="label_share_bottom_sheet">خيارات التحميل السريع</string>
+    <string name="playlist_info_count">تحتوي قائمة التشغيل على %1$d فيديو</string>
+    <string name="title_default_settings">الإعدادات الافتراضية</string>
+    <string name="pref_auto_download_title">تحميل تلقائي عند المشاركة</string>
+    <string name="pref_auto_download_summary">بدء التحميل فور استلام الرابط دون عرض القائمة</string>
+    <string name="pref_playlist_subfolder_title">مجلد قائمة التشغيل</string>
+    <string name="pref_playlist_subfolder_summary">تنظيم تنزيلات قوائم التشغيل في مجلداتها الخاصة</string>
+    <string name="label_playlist_info">معلومات قائمة التشغيل</string>
+    <string name="btn_select_items">تحديد العناصر</string>
+    <string name="btn_default_settings">الإعدادات الافتراضية</string>
+    <string name="toast_analyzing_background">جاري تحليل الرابط في الخلفية…</string>
+    <string name="title_auto_downloaded_playlist">قائمة تشغيل تم تنزيلها تلقائيًا</string>
+    <string name="toast_added_multiple_videos">تمت إضافة %1$d مقاطع فيديو إلى قائمة الانتظار</string>
+    <string name="toast_download_added">تمت إضافة التنزيل إلى قائمة الانتظار</string>
+    <string name="toast_error_bot_block_background">خطأ في تحميل الرابط. إذا كان حظر روبوتات، افتح التطبيق.</string>
+    <string name="title_playlist_items_found">قائمة التشغيل: تم العثور على %1$d عناصر</string>
+    <string name="toast_bot_block_refreshing">حظر روبوتات يوتيوب! جاري فتح شاشة تسجيل الدخول للتحديث…</string>
+    <string name="toast_select_at_least_one">يرجى تحديد مقطع فيديو واحد على الأقل</string>
+    <string name="notification_title_download_failed">فشل التنزيل</string>
+    <string name="notification_desc_download_failed">فشل تنزيل %1$s</string>
+    <string name="btn_try_again">حاول مرة أخرى</string>
+    <string name="cb_select_all">تحديد الكل</string>
+
+
+    <string-array name="video_qualities_display">
+        <item>أفضل متاح</item>
+        <item>1080p</item>
+        <item>720p</item>
+        <item>480p</item>
+        <item>360p</item>
+    </string-array>
+    <string-array name="audio_qualities_display">
+        <item>أفضل جودة</item>
+        <item>متوسطة</item>
+        <item>منخفضة</item>
+    </string-array>
+
+
+
+
+</resources>

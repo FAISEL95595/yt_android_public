@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">YT Downloader Pro</string>
+    <string name="menu_login">Login to YouTube</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_support">☕ Support Development</string>
+    <string name="hint_enter_url">Enter link here</string>
+    <string name="btn_analyze">Analyze Link</string>
+    <string name="title_options">Download Options</string>
+    <string name="label_format">Format:</string>
+    <string name="label_video_quality">Video Quality:</string>
+    <string name="label_audio_quality">Audio Quality:</string>
+    <string name="cb_skip_ssl">Skip SSL Check</string>
+    <string name="cb_metadata">Save Metadata (Audio)</string>
+    <string name="label_trim">Time Trim (Optional):</string>
+    <string name="hint_start_time">Start (e.g. 00:30)</string>
+    <string name="hint_end_time">End (e.g. 01:30)</string>
+    <string name="btn_start_download">Start Download</string>
+    <string name="btn_go_to_downloads">Go to Downloads</string>
+    <string name="btn_clear_all">Clear All</string>
+    <string name="header_downloads">Downloads</string>
+    <string name="btn_open">Open</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_resume">Resume</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="status_pending">Pending…</string>
+    <string name="status_downloading">Downloading… %1$d%%</string>
+    <string name="status_paused">Paused (%1$d%%)</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_failed">Failed</string>
+    <string name="title_settings">Settings</string>
+    <string name="switch_dark_mode">Dark Mode</string>
+    <string name="label_save_location">Current save location:</string>
+    <string name="btn_choose_folder">Choose new folder</string>
+    <string name="label_default_format">Default download type:</string>
+    <string name="format_video">Video</string>
+    <string name="format_audio">Audio</string>
+    <string name="title_playlist_sheet">Select videos to download</string>
+    <string name="label_select_all">Select All</string>
+    <string name="btn_download_selected">Download Selected</string>
+    <string name="toast_enter_url">Please enter a link</string>
+    <string name="toast_processing">Processing…</string>
+    <string name="toast_parse_error">Link analysis error</string>
+    <string name="toast_added_to_queue">Download added to queue</string>
+    <string name="donate_title">Enjoying the app? ☕</string>
+    <string name="donate_msg">Hey! Enjoying the app? Tons of hours were invested to make it awesome for you. Want to treat the dev to a coffee?</string>
+    <string name="donate_yes">Sure, I\'d love to!</string>
+    <string name="donate_later">Maybe later</string>
+    <string name="donate_never">Don\'t show again</string>
+    <string name="error_no_app">No suitable app found to play the file</string>
+    <string name="open_with">Open with</string>
+    <string name="storage_locaion">/storage/emulated/0/Download</string>
+    <string name="btn_open_playlist_folder">Open Playlist Folder</string>
+    <string name="label_choose_quality">Choose quality:</string>
+    <string name="cb_metadata_full">Embed Metadata (thumbnail and info)</string>
+    <string name="toast_permission_denied">Storage permission is required to download files</string>
+    <string name="status_analyzing_no_ssl">Analyzing link without SSL…</string>
+    <string name="status_analyzing">Analyzing link…</string>
+    <string name="toast_playlist_empty">No valid videos found in the playlist</string>
+    <string name="toast_load_error">Loading error: Check the link or network connection</string>
+    <string name="bot_block_title">Bot block detected</string>
+    <string name="bot_block_msg">The server detected an automated download and requires verification. To continue downloading, please log in to your account (the app will save identity cookies to bypass the block).</string>
+    <string name="btn_login_now">Login now</string>
+    <string name="toast_added_multiple_to_queue">Added %1$d videos to queue</string>
+    <string name="toast_no_browser">No browser found to open the link</string>
+    <string name="toast_donate_never_again">Alright, we won\'t bother you again! Enjoy the app.</string>
+    <string name="default_playlist_name">Playlist</string>
+    <string name="playlist_title_format">📁 %1$s (%2$d files)</string>
+    <string name="status_in_progress">In progress… %1$d%%</string>
+    <string name="tree_branch_prefix">  └ %1$s</string>
+    <string name="format_audio_with_icon">🎵 Audio</string>
+    <string name="format_video_with_icon">🎬 Video</string>
+    <string name="quality_best_short">Best</string>
+    <string name="status_downloading_progress">Downloading… %1$d%%</string>
+    <string name="status_paused_progress">Paused (%1$d%%)</string>
+    <string name="toast_cleared_completed_failed">Cleared all completed or failed downloads</string>
+    <string name="toast_cannot_delete_active">Cannot delete an active download. Cancel it first.</string>
+    <string name="toast_playlist_deleted">Playlist deleted</string>
+    <string name="toast_cannot_delete_active_playlist">Playlist has active downloads. Cancel them first.</string>
+    <string name="toast_file_not_found">File not found</string>
+    <string name="title_login_activity">YouTube Login</string>
+    <string name="title_downloads_activity">Download Queue</string>
+    <string name="title_settings_activity">Settings</string>
+    <string name="notification_downloading_queue">Downloading files in queue…</string>
+    <string name="label_language_setting">Language / App Language:</string>
+    <string name="hint_paste_link">Paste link here…</string>
+    <string name="notification_channel_name">Downloads</string>
+    <string name="toast_cannot_open_explorer">Cannot open file explorer. Path:\n%1$s</string>
+    <string name="quality_best">Best available (Best)</string>
+    <string name="quality_medium">Medium (Medium)</string>
+    <string name="quality_low">Low (Low)</string>
+    <string name="label_max_concurrent">Concurrent downloads: %1$d</string>
+    <string name="chooser_save_folder">Select Save Folder</string>
+    <string name="update_available_title">Version %1$s is available!</string>
+    <string name="update_available_msg">A new version is available for download. It is recommended to update to enjoy fixes and improvements.</string>
+    <string name="btn_download_update">Download and install now</string>
+    <string name="btn_no_thanks">No thanks</string>
+    <string name="btn_dont_show_again">Don\'t show again</string>
+    <string name="toast_updates_disabled">Update notifications disabled</string>
+    <string name="menu_update">Check for Updates</string>
+    <string name="toast_up_to_date">The app is up to date.</string>
+    <string name="label_loading_info">Loading information…</string>
+    <string name="btn_share_settings">Share Settings</string>
+    <string name="status_loading_info">Loading info…</string>
+    <string name="pref_category_defaults">Default Settings</string>
+    <string name="switch_auto_start_on_share">Auto-start download on share</string>
+    <string name="switch_playlist_subfolder">Create separate folder for each playlist</string>
+    <string name="label_share_bottom_sheet">Quick Download Options</string>
+    <string name="playlist_info_count">Playlist contains %1$d videos</string>
+    <string name="title_default_settings">Default Settings</string>
+    <string name="pref_auto_download_title">Auto-download on share</string>
+    <string name="pref_auto_download_summary">Start download immediately upon receiving link without showing menu</string>
+    <string name="pref_playlist_subfolder_title">Playlist Subfolder</string>
+    <string name="pref_playlist_subfolder_summary">Organize playlist downloads into their own folders</string>
+    <string name="label_playlist_info">Playlist Info</string>
+    <string name="btn_select_items">Select Items</string>
+    <string name="btn_default_settings">Default Settings</string>
+    <string name="toast_analyzing_background">Analyzing link in background…</string>
+    <string name="title_auto_downloaded_playlist">Auto Downloaded Playlist</string>
+    <string name="toast_added_multiple_videos">Added %1$d videos to queue</string>
+    <string name="toast_download_added">Download added to queue</string>
+    <string name="toast_error_bot_block_background">Error loading link. If it\'s a bot block, open the app.</string>
+    <string name="title_playlist_items_found">Playlist: %1$d items found</string>
+    <string name="toast_bot_block_refreshing">YouTube bot block! Opening login screen to refresh…</string>
+    <string name="toast_select_at_least_one">Please select at least one video</string>
+    <string name="notification_title_download_failed">Download failed</string>
+    <string name="notification_desc_download_failed">Download of %1$s failed</string>
+    <string name="btn_try_again">Try again</string>
+    <string name="cb_select_all">Select all</string>
+
+
+
+
+
+
+    <string-array name="video_qualities_display">
+        <item>Best Available</item>
+        <item>1080p</item>
+        <item>720p</item>
+        <item>480p</item>
+        <item>360p</item>
+    </string-array>
+    <string-array name="audio_qualities_display">
+        <item>Best</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+
+
+
+
+</resources>

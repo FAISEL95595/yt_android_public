@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">YT Downloader Pro</string>
+    <string name="menu_login">התחבר לחשבון יוטיוב</string>
+    <string name="menu_settings">הגדרות</string>
+    <string name="menu_support">☕ תמוך בפיתוח</string>
+    <string name="hint_enter_url">הכנס קישור כאן</string>
+    <string name="btn_analyze">נתח קישור</string>
+    <string name="title_options">אפשרויות הורדה</string>
+    <string name="label_format">פורמט:</string>
+    <string name="label_video_quality">איכות וידאו:</string>
+    <string name="label_audio_quality">איכות אודיו:</string>
+    <string name="cb_skip_ssl">דלג על בדיקת SSL</string>
+    <string name="cb_metadata">שמור מטאדאטה (אודיו)</string>
+    <string name="label_trim">חיתוך זמן (אופציונלי):</string>
+    <string name="hint_start_time">התחלה (לדוג: 00:30)</string>
+    <string name="hint_end_time">סיום (לדוג: 01:30)</string>
+    <string name="btn_start_download">התחל הורדה</string>
+    <string name="btn_go_to_downloads">עבור לרשימת ההורדות</string>
+    <string name="btn_clear_all">נקה הכל</string>
+    <string name="header_downloads">הורדות</string>
+    <string name="btn_open">פתח</string>
+    <string name="btn_pause">השהה</string>
+    <string name="btn_resume">המשך</string>
+    <string name="btn_cancel">ביטול</string>
+    <string name="status_pending">ממתין…</string>
+    <string name="status_downloading">מוריד… %1$d%%</string>
+    <string name="status_paused">מושהה (%1$d%%)</string>
+    <string name="status_completed">הושלם</string>
+    <string name="status_failed">נכשל</string>
+    <string name="btn_open_playlist_folder">פתח את תיקיית הפלייליסט</string>
+    <string name="title_settings">הגדרות</string>
+    <string name="switch_dark_mode">מצב כהה (Dark Mode)</string>
+    <string name="label_save_location">מיקום שמירה נוכחי:</string>
+    <string name="btn_choose_folder">בחר תיקייה חדשה</string>
+    <string name="label_default_format">סוג הורדה ברירת מחדל:</string>
+    <string name="format_video">וידאו</string>
+    <string name="format_audio">אודיו</string>
+    <string name="title_playlist_sheet">בחר סרטונים להורדה</string>
+    <string name="label_select_all">בחר הכל</string>
+    <string name="btn_download_selected">הורד נבחרים</string>
+    <string name="toast_enter_url">אנא הכנס קישור</string>
+    <string name="toast_processing">מעבד…</string>
+    <string name="toast_parse_error">שגיאה בניתוח הקישור</string>
+    <string name="toast_added_to_queue">ההורדה נוספה לתור</string>
+    <string name="donate_title">נהנה מהאפליקציה? ☕</string>
+    <string name="donate_msg">היי! נהנה מהתוכנה? שעות של פיתוח הושקעו כאן כדי שיהיה לך נוח. בא לך לפרגן למפתח באיזה קפה?</string>
+    <string name="donate_yes">בטח, בכיף!</string>
+    <string name="donate_later">אולי פעם אחרת</string>
+    <string name="donate_never">אל תציג שוב</string>
+    <string name="error_no_app">לא נמצאה אפליקציה מתאימה לניגון הקובץ</string>
+    <string name="open_with">פתח באמצעות</string>
+    <string name="storage_locaion">/storage/emulated/0/Download</string>
+    <string name="quality_best">הכי טוב שקיים (Best)</string>
+    <string name="quality_medium">בינוני (Medium)</string>
+    <string name="quality_low">נמוך (Low)</string>
+    <string name="chooser_save_folder">בחר תיקיית שמירה</string>
+    <string name="toast_cannot_open_explorer">לא ניתן לפתוח את הסייר. הנתיב:\n%1$s</string>
+    <string name="notification_channel_name">הורדות</string>
+    <string name="label_choose_quality">בחר איכות:</string>
+    <string name="cb_metadata_full">הטמע Metadata (תמונה ופרטים)</string>
+    <string name="toast_permission_denied">יש לאשר הרשאות אחסון כדי להוריד קבצים</string>
+    <string name="status_analyzing_no_ssl">מנתח קישור ללא אישור אבטחה…</string>
+    <string name="status_analyzing">מנתח קישור…</string>
+    <string name="toast_playlist_empty">לא נמצאו סרטונים תקינים בפלייליסט</string>
+    <string name="toast_load_error">שגיאה בטעינה: בדוק את הקישור או את החיבור לרשת</string>
+    <string name="bot_block_title">חסימת בוטים זוהתה</string>
+    <string name="bot_block_msg">השרת זיהה שמדובר בהורדה אוטומטית ודורש אימות. כדי להמשיך להוריד, עליך להתחבר לחשבון שלך (כך האפליקציה תשמור עוגיות זיהוי ותוכל לעקוף את החסימה).</string>
+    <string name="btn_login_now">התחבר עכשיו</string>
+    <string name="toast_added_multiple_to_queue">התווספו %1$d סרטונים לתור</string>
+    <string name="toast_no_browser">לא נמצא דפדפן לפתיחת הקישור</string>
+    <string name="toast_donate_never_again">בסדר גמור, לא נחפור יותר! תהנה מהאפליקציה.</string>
+    <string name="label_max_concurrent">הורדות במקביל: %1$d</string>
+    <string name="default_playlist_name">פלייליסט</string>
+    <string name="playlist_title_format">📁 %1$s (%2$d קבצים)</string>
+    <string name="status_in_progress">בתהליך… %1$d%%</string>
+    <string name="tree_branch_prefix">  └ %1$s</string>
+    <string name="format_audio_with_icon">🎵 אודיו</string>
+    <string name="format_video_with_icon">🎬 וידאו</string>
+    <string name="quality_best_short">הכי טוב</string>
+    <string name="status_downloading_progress">מוריד… %1$d%%</string>
+    <string name="status_paused_progress">מושהה (%1$d%%)</string>
+    <string name="toast_cleared_completed_failed">נוקו כל ההורדות שהושלמו או בוטלו</string>
+    <string name="toast_cannot_delete_active">לא ניתן למחוק הורדה פעילה. בטל אותה קודם.</string>
+    <string name="toast_playlist_deleted">הפלייליסט נמחק</string>
+    <string name="toast_cannot_delete_active_playlist">יש הורדות פעילות בפלייליסט. בטל אותן קודם.</string>
+    <string name="toast_file_not_found">הקובץ לא נמצא</string>
+    <string name="title_login_activity">התחברות ליוטיוב</string>
+    <string name="title_downloads_activity">תור ההורדות</string>
+    <string name="title_settings_activity">הגדרות</string>
+    <string name="notification_downloading_queue">מוריד קבצים בתור…</string>
+    <string name="label_language_setting">Language / שפת האפליקציה:</string>
+    <string name="hint_paste_link">הדבק קישור כאן…</string>
+    <string name="update_available_title">גרסה %1$s זמינה!</string>
+    <string name="update_available_msg">גרסה חדשה זמינה להורדה. מומלץ לעדכן כדי ליהנות מתיקונים ושיפורים.</string>
+    <string name="btn_download_update">הורד והתקן עכשיו</string>
+    <string name="btn_no_thanks">לא תודה</string>
+    <string name="btn_dont_show_again">אל תציג שוב</string>
+    <string name="toast_updates_disabled">הודעות עדכון בוטלו</string>
+    <string name="menu_update">עדכון תוכנה</string>
+    <string name="toast_up_to_date">האפליקציה מעודכנת לגרסה האחרונה.</string>
+    <string name="pref_category_defaults">הגדרות ברירת מחדל</string>
+    <string name="switch_auto_start_on_share">התחל הורדה אוטומטית בשיתוף</string>
+    <string name="switch_playlist_subfolder">צור תיקייה נפרדת לכל פלייליסט</string>
+    <string name="label_share_bottom_sheet">אפשרויות הורדה מהירות</string>
+    <string name="playlist_info_count">הפלייליסט מכיל %1$d סרטונים</string>
+    <string name="title_default_settings">הגדרות ברירת מחדל</string>
+    <string name="pref_auto_download_title">הורדה אוטומטית בשיתוף</string>
+    <string name="pref_auto_download_summary">התחל הורדה מיד עם קבלת קישור חיצוני ללא הצגת תפריט</string>
+    <string name="label_loading_info">טוען נתונים…</string>
+    <string name="btn_share_settings">הגדרות שיתוף</string>
+    <string name="status_loading_info">טוען מידע…</string>
+    <string name="pref_playlist_subfolder_title">תיקיית פלייליסט</string>
+    <string name="pref_playlist_subfolder_summary">ארגן הורדות פלייליסט בתיקיות נפרדות</string>
+    <string name="label_playlist_info">מידע על הפלייליסט</string>
+    <string name="btn_select_items">בחר פריטים</string>
+    <string name="btn_default_settings">הגדרות ברירת מחדל</string>
+    <string name="toast_analyzing_background">מנתח קישור ברקע…</string>
+    <string name="title_auto_downloaded_playlist">פלייליסט שהורד אוטומטית</string>
+    <string name="toast_added_multiple_videos">נוספו %1$d סרטונים לתור</string>
+    <string name="toast_download_added">ההורדה התווספה לתור</string>
+    <string name="toast_error_bot_block_background">שגיאה בטעינת הקישור. אם זו חסימת בוטים, פתח את האפליקציה.</string>
+    <string name="title_playlist_items_found">פלייליסט: %1$d פריטים נמצאו</string>
+    <string name="toast_bot_block_refreshing">חסימת בוטים של יוטיוב! פותח מסך התחברות לריענון…</string>
+    <string name="toast_select_at_least_one">נא לבחור לפחות סרטון אחד</string>
+    <string name="notification_title_download_failed">הורדה נכשלה</string>
+    <string name="notification_desc_download_failed">הורדה של %1$s נכשלה</string>
+    <string name="btn_try_again">נסה שוב</string>
+    <string name="cb_select_all">בחר הכל</string>
+
+
+
+    <string-array name="video_qualities_display">
+        <item>הכי טוב שיש</item>
+        <item>1080p</item>
+        <item>720p</item>
+        <item>480p</item>
+        <item>360p</item>
+    </string-array>
+    <string-array name="audio_qualities_display">
+        <item>הכי טוב</item>
+        <item>בינוני</item>
+        <item>נמוך</item>
+    </string-array>
+</resources>

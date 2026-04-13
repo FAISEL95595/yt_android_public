@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">YT Downloader Pro</string>
+    <string name="menu_login">Se connecter à YouTube</string>
+    <string name="menu_settings">Paramètres</string>
+    <string name="menu_support">☕ Soutenir le développement</string>
+    <string name="hint_enter_url">Entrez le lien ici</string>
+    <string name="btn_analyze">Analyser le lien</string>
+    <string name="title_options">Options de téléchargement</string>
+    <string name="label_format">Format :</string>
+    <string name="label_video_quality">Qualité vidéo :</string>
+    <string name="label_audio_quality">Qualité audio :</string>
+    <string name="cb_skip_ssl">Ignorer la vérification SSL</string>
+    <string name="cb_metadata">Enregistrer les métadonnées (Audio)</string>
+    <string name="label_trim">Découpage temporel (Optionnel) :</string>
+    <string name="hint_start_time">Début (ex. 00:30)</string>
+    <string name="hint_end_time">Fin (ex. 01:30)</string>
+    <string name="btn_start_download">Démarrer le téléchargement</string>
+    <string name="btn_go_to_downloads">Aller aux téléchargements</string>
+    <string name="btn_clear_all">Tout effacer</string>
+    <string name="header_downloads">Téléchargements</string>
+    <string name="btn_open">Ouvrir</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_resume">Reprendre</string>
+    <string name="btn_cancel">Annuler</string>
+    <string name="status_pending">En attente…</string>
+    <string name="status_downloading">Téléchargement… %1$d%%</string>
+    <string name="status_paused">En pause (%1$d%%)</string>
+    <string name="status_completed">Terminé</string>
+    <string name="status_failed">Échoué</string>
+    <string name="title_settings">Paramètres</string>
+    <string name="switch_dark_mode">Mode sombre</string>
+    <string name="label_save_location">Lieu d\'enregistrement actuel :</string>
+    <string name="btn_choose_folder">Choisir un nouveau dossier</string>
+    <string name="label_default_format">Type de téléchargement par défaut :</string>
+    <string name="format_video">Vidéo</string>
+    <string name="format_audio">Audio</string>
+    <string name="title_playlist_sheet">Sélectionner les vidéos</string>
+    <string name="label_select_all">Tout sélectionner</string>
+    <string name="btn_download_selected">Télécharger la sélection</string>
+    <string name="toast_enter_url">Veuillez entrer un lien</string>
+    <string name="toast_processing">Traitement…</string>
+    <string name="toast_parse_error">Erreur d\'analyse du lien</string>
+    <string name="toast_added_to_queue">Téléchargement ajouté à la file</string>
+    <string name="donate_title">Tu aimes l\'appli ? ☕</string>
+    <string name="donate_msg">Salut ! Tu aimes l\'appli ? Des tonnes d\'heures ont été investies ici. Tu veux offrir un café au développeur ?</string>
+    <string name="donate_yes">Bien sûr, avec plaisir !</string>
+    <string name="donate_later">Peut-être plus tard</string>
+    <string name="donate_never">Ne plus demander</string>
+    <string name="error_no_app">Aucune application trouvée pour lire le fichier</string>
+    <string name="open_with">Ouvrir avec</string>
+    <string name="storage_locaion">/storage/emulated/0/Download</string>
+    <string name="btn_open_playlist_folder">Ouvrir le dossier de la playlist</string>
+    <string name="label_choose_quality">Choisir la qualité :</string>
+    <string name="cb_metadata_full">Intégrer les métadonnées (miniature et infos)</string>
+    <string name="toast_permission_denied">L\'autorisation de stockage est requise pour télécharger</string>
+    <string name="status_analyzing_no_ssl">Analyse du lien sans SSL…</string>
+    <string name="status_analyzing">Analyse du lien…</string>
+    <string name="toast_playlist_empty">Aucune vidéo valide trouvée dans la playlist</string>
+    <string name="toast_load_error">Erreur de chargement : vérifiez le lien ou le réseau</string>
+    <string name="bot_block_title">Blocage de bot détecté</string>
+    <string name="bot_block_msg">Le serveur a détecté un téléchargement automatisé et nécessite une vérification. Pour continuer, veuillez vous connecter à votre compte (l\'application enregistrera des cookies pour contourner le blocage).</string>
+    <string name="btn_login_now">Se connecter maintenant</string>
+    <string name="toast_added_multiple_to_queue">Ajout de %1$d vidéos à la file</string>
+    <string name="toast_no_browser">Aucun navigateur trouvé pour ouvrir le lien</string>
+    <string name="toast_donate_never_again">D\'accord, nous ne vous dérangerons plus ! Profitez de l\'application.</string>
+    <string name="default_playlist_name">Playlist</string>
+    <string name="playlist_title_format">📁 %1$s (%2$d fichiers)</string>
+    <string name="status_in_progress">En cours… %1$d%%</string>
+    <string name="tree_branch_prefix">  └ %1$s</string>
+    <string name="format_audio_with_icon">🎵 Audio</string>
+    <string name="format_video_with_icon">🎬 Vidéo</string>
+    <string name="quality_best_short">Meilleur</string>
+    <string name="status_downloading_progress">Téléchargement… %1$d%%</string>
+    <string name="status_paused_progress">En pause (%1$d%%)</string>
+    <string name="toast_cleared_completed_failed">Tous les téléchargements terminés ou échoués ont été effacés</string>
+    <string name="toast_cannot_delete_active">Impossible de supprimer un téléchargement actif. Annulez-le d\'abord.</string>
+    <string name="toast_playlist_deleted">Playlist supprimée</string>
+    <string name="toast_cannot_delete_active_playlist">La playlist contient des téléchargements actifs. Annulez-les d\'abord.</string>
+    <string name="toast_file_not_found">Fichier non trouvé</string>
+    <string name="title_login_activity">Connexion YouTube</string>
+    <string name="title_downloads_activity">File de téléchargement</string>
+    <string name="title_settings_activity">Paramètres</string>
+    <string name="notification_downloading_queue">Téléchargement des fichiers dans la file…</string>
+    <string name="label_language_setting">Language / שפת האפליקציה:</string>
+    <string name="hint_paste_link">Collez le lien ici…</string>
+    <string name="notification_channel_name">Téléchargements</string>
+    <string name="toast_cannot_open_explorer">Impossible d\'ouvrir l\'explorateur de fichiers. Chemin :\n%1$s</string>
+    <string name="quality_best">Meilleur disponible (Best)</string>
+    <string name="quality_medium">Moyen (Medium)</string>
+    <string name="quality_low">Bas (Low)</string>
+    <string name="label_max_concurrent">Téléchargements simultanés : %1$d</string>
+    <string name="chooser_save_folder">Choisir le dossier d\'enregistrement</string>
+    <string name="update_available_title">La version %1$s est disponible !</string>
+    <string name="update_available_msg">Une nouvelle version est disponible au téléchargement. Il est recommandé de mettre à jour pour profiter des correctifs et améliorations.</string>
+    <string name="btn_download_update">Télécharger et installer maintenant</string>
+    <string name="btn_no_thanks">Non merci</string>
+    <string name="btn_dont_show_again">Ne plus afficher</string>
+    <string name="toast_updates_disabled">Notifications de mise à jour désactivées</string>
+    <string name="menu_update">Vérifier les mises à jour</string>
+    <string name="toast_up_to_date">L\'application est à jour.</string>
+    <string name="label_loading_info">Chargement des informations…</string>
+    <string name="btn_share_settings">Paramètres de partage</string>
+    <string name="status_loading_info">Chargement…</string>
+    <string name="pref_category_defaults">Paramètres par défaut</string>
+    <string name="switch_auto_start_on_share">Démarrage auto via partage</string>
+    <string name="switch_playlist_subfolder">Dossier séparé pour chaque playlist</string>
+    <string name="label_share_bottom_sheet">Options de téléchargement rapide</string>
+    <string name="playlist_info_count">La playlist contient %1$d vidéos</string>
+    <string name="title_default_settings">Paramètres par défaut</string>
+    <string name="pref_auto_download_title">Téléchargement auto via partage</string>
+    <string name="pref_auto_download_summary">Lancer le téléchargement immédiatement après réception du lien</string>
+    <string name="pref_playlist_subfolder_title">Sous-dossier de playlist</string>
+    <string name="pref_playlist_subfolder_summary">Organiser les téléchargements dans des dossiers propres</string>
+    <string name="label_playlist_info">Infos playlist</string>
+    <string name="btn_select_items">Sélectionner les éléments</string>
+    <string name="btn_default_settings">Paramètres par défaut</string>
+    <string name="toast_analyzing_background">Analyse du lien en arrière-plan…</string>
+    <string name="title_auto_downloaded_playlist">Liste de lecture téléchargée automatiquement</string>
+    <string name="toast_added_multiple_videos">%1$d vidéos ajoutées à la file d\'attente</string>
+    <string name="toast_download_added">Téléchargement ajouté à la file d\'attente</string>
+    <string name="toast_error_bot_block_background">Erreur de chargement. S\'il s\'agit d\'un blocage de bot, ouvrez l\'application.</string>
+    <string name="title_playlist_items_found">Liste de lecture : %1$d éléments trouvés</string>
+    <string name="toast_bot_block_refreshing">Blocage de bot YouTube ! Ouverture de l\'écran de connexion…</string>
+
+    <string name="toast_select_at_least_one">Veuillez sélectionner au moins une vidéo</string>
+    <string name="notification_title_download_failed">Échec du téléchargement</string>
+    <string name="notification_desc_download_failed">Échec du téléchargement de %1$s</string>
+    <string name="btn_try_again">Réessayer</string>
+    <string name="cb_select_all">Tout sélectionner</string>
+
+
+    <string-array name="video_qualities_display">
+        <item>Meilleur disponible</item>
+        <item>1080p</item>
+        <item>720p</item>
+        <item>480p</item>
+        <item>360p</item>
+    </string-array>
+    <string-array name="audio_qualities_display">
+        <item>Meilleure</item>
+        <item>Moyenne</item>
+        <item>Basse</item>
+    </string-array>
+
+
+
+</resources>

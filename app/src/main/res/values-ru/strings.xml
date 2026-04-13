@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">YT Downloader Pro</string>
+    <string name="menu_login">Войти в YouTube</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_support">☕ Поддержать разработку</string>
+    <string name="hint_enter_url">Вставьте ссылку здесь</string>
+    <string name="btn_analyze">Анализировать ссылку</string>
+    <string name="title_options">Параметры загрузки</string>
+    <string name="label_format">Формат:</string>
+    <string name="label_video_quality">Качество видео:</string>
+    <string name="label_audio_quality">Качество аудио:</string>
+    <string name="cb_skip_ssl">Пропустить проверку SSL</string>
+    <string name="cb_metadata">Сохранить метаданные (Аудио)</string>
+    <string name="label_trim">Обрезка времени (Опционально):</string>
+    <string name="hint_start_time">Начало (напр. 00:30)</string>
+    <string name="hint_end_time">Конец (напр. 01:30)</string>
+    <string name="btn_start_download">Начать загрузку</string>
+    <string name="btn_go_to_downloads">Список загрузок</string>
+    <string name="btn_clear_all">Очистить все</string>
+    <string name="header_downloads">Загрузки</string>
+    <string name="btn_open">Открыть</string>
+    <string name="btn_pause">Пауза</string>
+    <string name="btn_resume">Продолжить</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="status_pending">Ожидание…</string>
+    <string name="status_downloading">Загрузка… %1$d%%</string>
+    <string name="status_paused">Приостановлено (%1$d%%)</string>
+    <string name="status_completed">Завершено</string>
+    <string name="status_failed">Ошибка</string>
+    <string name="title_settings">Настройки</string>
+    <string name="switch_dark_mode">Темная тема</string>
+    <string name="label_save_location">Текущая папка:</string>
+    <string name="btn_choose_folder">Выбрать новую папку</string>
+    <string name="label_default_format">Тип загрузки по умолчанию:</string>
+    <string name="format_video">Видео</string>
+    <string name="format_audio">Аудио</string>
+    <string name="title_playlist_sheet">Выберите видео</string>
+    <string name="label_select_all">Выбрать все</string>
+    <string name="btn_download_selected">Скачать выбранные</string>
+    <string name="toast_enter_url">Пожалуйста, введите ссылку</string>
+    <string name="toast_processing">Обработка…</string>
+    <string name="toast_parse_error">Ошибка анализа ссылки</string>
+    <string name="toast_added_to_queue">Загрузка добавлена в очередь</string>
+    <string name="donate_title">Нравится программа? ☕</string>
+    <string name="donate_msg">Привет! Нравится программа? В неё вложено много часов труда. Хотите угостить разработчика кофе?</string>
+    <string name="donate_yes">Конечно, с радостью!</string>
+    <string name="donate_later">Может быть, позже</string>
+    <string name="donate_never">Больше не показывать</string>
+    <string name="error_no_app">Не найдено подходящее приложение для воспроизведения</string>
+    <string name="open_with">Открыть с помощью</string>
+    <string name="storage_locaion">/storage/emulated/0/Download</string>
+    <string name="btn_open_playlist_folder">Открыть папку плейлиста</string>
+    <string name="label_choose_quality">Выберите качество:</string>
+    <string name="cb_metadata_full">Встроить метаданные (обложка и инфо)</string>
+    <string name="toast_permission_denied">Для загрузки файлов требуется разрешение на хранение</string>
+    <string name="status_analyzing_no_ssl">Анализ ссылки без SSL…</string>
+    <string name="status_analyzing">Анализ ссылки…</string>
+    <string name="toast_playlist_empty">В плейлисте не найдено подходящих видео</string>
+    <string name="toast_load_error">Ошибка загрузки: проверьте ссылку или сеть</string>
+    <string name="bot_block_title">Обнаружена блокировка ботов</string>
+    <string name="bot_block_msg">Сервер обнаружил автоматическую загрузку и требует проверки. Чтобы продолжить загрузку, войдите в свой аккаунт (приложение сохранит файлы cookie для обхода блокировки).</string>
+    <string name="btn_login_now">Войти сейчас</string>
+    <string name="toast_added_multiple_to_queue">Добавлено %1$d видео в очередь</string>
+    <string name="toast_no_browser">Браузер для открытия ссылки не найден</string>
+    <string name="toast_donate_never_again">Хорошо, больше не будем беспокоить! Приятного использования.</string>
+    <string name="default_playlist_name">Плейлист</string>
+    <string name="playlist_title_format">📁 %1$s (%2$d файлов)</string>
+    <string name="status_in_progress">В процессе… %1$d%%</string>
+    <string name="tree_branch_prefix">  └ %1$s</string>
+    <string name="format_audio_with_icon">🎵 Аудио</string>
+    <string name="format_video_with_icon">🎬 Видео</string>
+    <string name="quality_best_short">Лучшее</string>
+    <string name="status_downloading_progress">Загрузка… %1$d%%</string>
+    <string name="status_paused_progress">Приостановлено (%1$d%%)</string>
+    <string name="toast_cleared_completed_failed">Очищены все завершенные или неудачные загрузки</string>
+    <string name="toast_cannot_delete_active">Нельзя удалить активную загрузку. Сначала отмените её.</string>
+    <string name="toast_playlist_deleted">Плейлист удален</string>
+    <string name="toast_cannot_delete_active_playlist">В плейлисте есть активные загрузки. Сначала отмените их.</string>
+    <string name="toast_file_not_found">Файл не найден</string>
+    <string name="title_login_activity">Вход в YouTube</string>
+    <string name="title_downloads_activity">Очередь загрузок</string>
+    <string name="title_settings_activity">Настройки</string>
+    <string name="notification_downloading_queue">Загрузка файлов из очереди…</string>
+    <string name="label_language_setting">Language / שפת האפליקציה:</string>
+    <string name="hint_paste_link">Вставьте ссылку здесь…</string>
+    <string name="notification_channel_name">Загрузки</string>
+    <string name="toast_cannot_open_explorer">Не удалось открыть проводник. Путь:\n%1$s</string>
+    <string name="quality_best">Лучшее из доступных (Best)</string>
+    <string name="quality_medium">Среднее (Medium)</string>
+    <string name="quality_low">Низкое (Low)</string>
+    <string name="label_max_concurrent">Одновременных загрузок: %1$d</string>
+    <string name="chooser_save_folder">Выберите папку для сохранения</string>
+    <string name="update_available_title">Доступна версия %1$s!</string>
+    <string name="update_available_msg">Доступна новая версия для скачивания. Рекомендуется обновить для получения исправлений и улучшений.</string>
+    <string name="btn_download_update">Скачать и установить сейчас</string>
+    <string name="btn_no_thanks">Нет, спасибо</string>
+    <string name="btn_dont_show_again">Больше не показывать</string>
+    <string name="toast_updates_disabled">Уведомления об обновлениях отключены</string>
+    <string name="menu_update">Проверить обновления</string>
+    <string name="toast_up_to_date">Приложение обновлено до последней версии.</string>
+
+
+    <string name="label_loading_info">Загрузка информации…</string>
+    <string name="btn_share_settings">Настройки обмена</string>
+    <string name="status_loading_info">Загрузка данных…</string>
+    <string name="pref_category_defaults">Настройки по умолчанию</string>
+    <string name="switch_auto_start_on_share">Автозагрузка при обмене</string>
+    <string name="switch_playlist_subfolder">Отдельная папка для каждого плейлиста</string>
+    <string name="label_share_bottom_sheet">Быстрая загрузка</string>
+    <string name="playlist_info_count">Плейлист содержит %1$d видео</string>
+    <string name="title_default_settings">Настройки по умолчанию</string>
+    <string name="pref_auto_download_title">Автозагрузка при обмене</string>
+    <string name="pref_auto_download_summary">Начинать загрузку сразу после получения ссылки без меню</string>
+    <string name="pref_playlist_subfolder_title">Папка плейлиста</string>
+    <string name="pref_playlist_subfolder_summary">Организовать загрузки плейлистов в свои папки</string>
+    <string name="label_playlist_info">Информация о плейлисте</string>
+    <string name="btn_select_items">Выбрать элементы</string>
+    <string name="btn_default_settings">Настройки по умолчанию</string>
+    <string name="toast_analyzing_background">Анализ ссылки в фоновом режиме…</string>
+    <string name="title_auto_downloaded_playlist">Автоматически скачанный плейлист</string>
+    <string name="toast_added_multiple_videos">Добавлено %1$d видео в очередь</string>
+    <string name="toast_download_added">Загрузка добавлена в очередь</string>
+    <string name="toast_error_bot_block_background">Ошибка загрузки ссылки. Если это блокировка ботов, откройте приложение.</string>
+    <string name="title_playlist_items_found">Плейлист: найдено %1$d элементов</string>
+    <string name="toast_bot_block_refreshing">Блокировка ботов YouTube! Открытие экрана входа для обновления…</string>
+    <string name="toast_select_at_least_one">Пожалуйста, выберите хотя бы одно видео</string>
+    <string name="notification_title_download_failed">Сбой загрузки</string>
+    <string name="notification_desc_download_failed">Не удалось скачать %1$s</string>
+    <string name="btn_try_again">Повторить попытку</string>
+    <string name="cb_select_all">Выбрать все</string>
+
+
+
+    <string-array name="video_qualities_display">
+        <item>Лучшее доступное</item>
+        <item>1080p</item>
+        <item>720p</item>
+        <item>480p</item>
+        <item>360p</item>
+    </string-array>
+    <string-array name="audio_qualities_display">
+        <item>Лучшее</item>
+        <item>Среднее</item>
+        <item>Низкое</item>
+    </string-array>
+</resources>

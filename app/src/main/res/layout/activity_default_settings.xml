@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/defaultSettingsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/title_default_settings"
+        app:navigationIcon="?attr/homeAsUpIndicator" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swAutoDownload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_auto_download_title"
+                android:subtitle="@string/pref_auto_download_summary" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swPlaylistSubfolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pref_playlist_subfolder_title" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swSkipSslDefault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/cb_skip_ssl" />
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="?android:attr/listDivider" android:layout_marginVertical="16dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/label_default_format" android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/rgDefaultFormatGlobal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+                <RadioButton android:id="@+id/rbVideoGlobal" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/format_video" android:layout_marginEnd="16dp"/>
+                <RadioButton android:id="@+id/rbAudioGlobal" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="@string/format_audio" />
+            </RadioGroup>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/label_video_quality" android:layout_marginTop="16dp" />
+            <Spinner android:id="@+id/spinnerDefaultVideoQuality" android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/label_audio_quality" android:layout_marginTop="16dp" />
+            <Spinner android:id="@+id/spinnerDefaultAudioQuality" android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

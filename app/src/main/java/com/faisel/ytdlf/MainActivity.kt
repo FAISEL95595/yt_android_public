@@ -118,7 +118,7 @@ class MainActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.nav_login -> startActivity(Intent(this, LoginActivity::class.java))
                 R.id.nav_settings -> startActivity(Intent(this, SettingsActivity::class.java))
-                R.id.nav_update -> UpdateHelper(this).checkForUpdates(isManual = true)
+            //    R.id.nav_update -> UpdateHelper(this).checkForUpdates(isManual = true)
                 R.id.nav_donate -> openKoFi()
             }
             drawerLayout.closeDrawer(GravityCompat.START)
@@ -147,9 +147,9 @@ class MainActivity : AppCompatActivity() {
 
         intent.getStringExtra("SHARED_URL")?.let { binding.etUrl.setText(it) }
         checkAndShowDonateDialog()
-        UpdateHelper(this).checkForUpdates()
-        val navUpdateItem = navigationView.menu.findItem(R.id.nav_update)
-        UpdateHelper(this).checkUpdateBadge(navUpdateItem)
+     //   UpdateHelper(this).checkForUpdates()
+     //   val navUpdateItem = navigationView.menu.findItem(R.id.nav_update)
+     //   UpdateHelper(this).checkUpdateBadge(navUpdateItem)
     }
 
     private fun setupFormatToggle() {

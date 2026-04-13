@@ -4,10 +4,6 @@ plugins {
 
 val appVersionName = "1.2"
 
-base {
-    archivesName.set("YTDownloaderPro-$appVersionName")
-}
-
 android {
     namespace = "com.faisel.ytdlf"
     compileSdk {

@@ -1,0 +1,9 @@
+YT Downloader Pro is an ad-free, fast, and powerful app for downloading videos and audio directly to your device.
+
+Features:
+* Smart Share: Download directly from the YouTube app via the share menu.
+* Playlist Support: Select and download specific videos from entire playlists.
+* Background downloading with progress notifications.
+* Skip SSL errors for filtered networks.
+* Built-in bot protection handling.
+* Choose preferred formats and qualities (up to 4K/8K depending on the source).

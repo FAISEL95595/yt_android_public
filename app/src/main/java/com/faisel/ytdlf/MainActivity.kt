@@ -5,6 +5,8 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.os.Environment
+import android.provider.Settings
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -101,6 +103,16 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private val manageStorageLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            if (Environment.isExternalStorageManager()) {
+                checkPermissionsAndStart()
+            } else {
+                Toast.makeText(this, getString(R.string.toast_permission_denied), Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -171,13 +183,23 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun checkPermissionsAndStart() {
-        val permissionsToRequest = mutableListOf<String>()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && !Environment.isExternalStorageManager()) {
+            try {
+                val intent = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION)
+                intent.data = "package:$packageName".toUri()
+                manageStorageLauncher.launch(intent)
+            } catch (e: Exception) {
+                val intent = Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION)
+                manageStorageLauncher.launch(intent)
+            }
+            return
+        }
 
+        val permissionsToRequest = mutableListOf<String>()
         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.Q &&
             ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             permissionsToRequest.add(Manifest.permission.WRITE_EXTERNAL_STORAGE)
         }
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
             ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
             permissionsToRequest.add(Manifest.permission.POST_NOTIFICATIONS)

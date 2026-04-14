@@ -2,8 +2,6 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
-val appVersionName = "1.2"
-
 android {
     namespace = "com.faisel.ytdlf"
     compileSdk {

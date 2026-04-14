@@ -7,7 +7,6 @@ import android.util.Log
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.content.edit
-import androidx.core.net.toUri
 import com.yausername.youtubedl_android.YoutubeDL
 import com.yausername.youtubedl_android.YoutubeDLRequest
 import kotlinx.coroutines.CoroutineScope
@@ -194,20 +193,17 @@ object DownloadManager {
 
     private fun getBaseDownloadDirectory(context: Context): File {
         val prefs = context.getSharedPreferences("AppPreferences", Context.MODE_PRIVATE)
-        val savedUriString = prefs.getString("PREF_SAVE_LOCATION_URI", null)
+        val savedLocation = prefs.getString("PREF_SAVE_LOCATION", null)
 
         var baseDir = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "YtDownloader")
 
-        if (savedUriString != null) {
-            try {
-                val uri = savedUriString.toUri()
-                val path = uri.path
-                if (path != null && path.contains("primary:")) {
-                    val realPath = path.split("primary:")[1]
-                    baseDir = File(Environment.getExternalStorageDirectory(), realPath)
-                }
-            } catch (e: Exception) { e.printStackTrace() }
+        if (!savedLocation.isNullOrEmpty()) {
+            val customDir = File(savedLocation)
+            if (customDir.exists() || customDir.mkdirs()) {
+                baseDir = customDir
+            }
         }
+
         return baseDir
     }
 

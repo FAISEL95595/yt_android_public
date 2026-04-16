@@ -2,6 +2,12 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
+val appVersionName = "2.0"
+
+base {
+    archivesName.set("YTDownloaderPro-$appVersionName")
+}
+
 android {
     namespace = "com.faisel.ytdlf"
     compileSdk {
@@ -14,8 +20,8 @@ android {
         applicationId = "com.faisel.ytdlf"
         minSdk = 28
         targetSdk = 36
-        versionCode = 2
-        versionName = "1.5"
+        versionCode = 1
+        versionName = appVersionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
@@ -30,7 +36,14 @@ android {
         }
     }
 
-
+    splits {
+        abi {
+            isEnable = true
+            reset()
+            include("arm64-v8a", "armeabi-v7a", "x86", "x86_64")
+            isUniversalApk = true
+        }
+    }
 
     buildTypes {
         release {

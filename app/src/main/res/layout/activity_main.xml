@@ -124,6 +124,13 @@
                                 android:text="@string/cb_metadata_full"
                                 android:visibility="gone"/>
 
+                            <CheckBox
+                                android:id="@+id/cbSubtitles"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cb_download_subtitles"
+                                android:visibility="gone"/>
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"

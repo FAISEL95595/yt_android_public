@@ -84,7 +84,13 @@
             android:layout_height="48dp"
             android:layout_marginTop="12dp"
             android:background="@android:drawable/btn_dropdown" />
-
+        <CheckBox
+            android:id="@+id/cbSheetSubtitles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/cb_download_subtitles"
+            android:visibility="gone" />
         <Button
             android:id="@+id/btnSheetDownload"
             android:layout_width="match_parent"

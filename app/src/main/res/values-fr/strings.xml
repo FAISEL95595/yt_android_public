@@ -121,7 +121,7 @@
     <string name="toast_error_bot_block_background">Erreur de chargement. S\'il s\'agit d\'un blocage de bot, ouvrez l\'application.</string>
     <string name="title_playlist_items_found">Liste de lecture : %1$d éléments trouvés</string>
     <string name="toast_bot_block_refreshing">Blocage de bot YouTube ! Ouverture de l\'écran de connexion…</string>
-
+    <string name="cb_download_subtitles">Télécharger les sous-titres</string>
     <string name="toast_select_at_least_one">Veuillez sélectionner au moins une vidéo</string>
     <string name="notification_title_download_failed">Échec du téléchargement</string>
     <string name="notification_desc_download_failed">Échec du téléchargement de %1$s</string>

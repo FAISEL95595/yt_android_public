@@ -98,7 +98,7 @@
     <string name="toast_updates_disabled">Уведомления об обновлениях отключены</string>
     <string name="menu_update">Проверить обновления</string>
     <string name="toast_up_to_date">Приложение обновлено до последней версии.</string>
-
+    <string name="cb_download_subtitles">Скачать субтитры</string>
 
     <string name="label_loading_info">Загрузка информации…</string>
     <string name="btn_share_settings">Настройки обмена</string>

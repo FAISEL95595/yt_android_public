@@ -126,7 +126,7 @@
     <string name="notification_desc_download_failed">فشل تنزيل %1$s</string>
     <string name="btn_try_again">حاول مرة أخرى</string>
     <string name="cb_select_all">تحديد الكل</string>
-
+    <string name="cb_download_subtitles">تنزيل الترجمة</string>
 
     <string-array name="video_qualities_display">
         <item>أفضل متاح</item>

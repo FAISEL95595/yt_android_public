@@ -102,7 +102,6 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, getString(R.string.toast_permission_denied), Toast.LENGTH_SHORT).show()
         }
     }
-
     private val manageStorageLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             if (Environment.isExternalStorageManager()) {
@@ -130,7 +129,7 @@ class MainActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.nav_login -> startActivity(Intent(this, LoginActivity::class.java))
                 R.id.nav_settings -> startActivity(Intent(this, SettingsActivity::class.java))
-            //    R.id.nav_update -> UpdateHelper(this).checkForUpdates(isManual = true)
+                R.id.nav_update -> UpdateHelper(this).checkForUpdates(isManual = true)
                 R.id.nav_donate -> openKoFi()
             }
             drawerLayout.closeDrawer(GravityCompat.START)
@@ -159,9 +158,9 @@ class MainActivity : AppCompatActivity() {
 
         intent.getStringExtra("SHARED_URL")?.let { binding.etUrl.setText(it) }
         checkAndShowDonateDialog()
-     //   UpdateHelper(this).checkForUpdates()
-     //   val navUpdateItem = navigationView.menu.findItem(R.id.nav_update)
-     //   UpdateHelper(this).checkUpdateBadge(navUpdateItem)
+        UpdateHelper(this).checkForUpdates()
+        val navUpdateItem = navigationView.menu.findItem(R.id.nav_update)
+        UpdateHelper(this).checkUpdateBadge(navUpdateItem)
     }
 
     private fun setupFormatToggle() {
@@ -171,6 +170,7 @@ class MainActivity : AppCompatActivity() {
             if (isChecked) {
                 val isAudio = checkedId == R.id.btnAudio
                 binding.cbMetadata.visibility = if (isAudio) View.VISIBLE else View.GONE
+                binding.cbSubtitles.visibility = if (isAudio) View.GONE else View.VISIBLE
 
                 val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, if (isAudio) audioQualitiesDisplay else videoQualitiesDisplay)
                 binding.spinnerQuality.adapter = adapter
@@ -390,6 +390,7 @@ class MainActivity : AppCompatActivity() {
         val skipSsl = binding.cbSkipSsl.isChecked
         val title = binding.tvVideoTitle.text.toString()
         val embedMetadata = binding.cbMetadata.isChecked
+        val downloadSubtitles = binding.cbSubtitles.isChecked
 
         val startTime = binding.etStartTime.text.toString().takeIf { it.isNotBlank() }
         val endTime = binding.etEndTime.text.toString().takeIf { it.isNotBlank() }
@@ -398,15 +399,27 @@ class MainActivity : AppCompatActivity() {
         val valuesArray = if (isAudio) audioQualitiesValues else videoQualitiesValues
         val selectedQuality = valuesArray.getOrElse(qualityIndex) { "best" }
 
-        DownloadManager.enqueueDownload(this, url, title, isAudio, skipSsl, null, null, selectedQuality, embedMetadata, startTime, endTime, currentThumbnailUrl)
 
+        DownloadManager.enqueueDownload(
+            context = this,
+            url = url,
+            title = title,
+            isAudio = isAudio,
+            skipSsl = skipSsl,
+            quality = selectedQuality,
+            metadata = embedMetadata,
+            downloadSubtitles = downloadSubtitles,
+            startTime = startTime,
+            endTime = endTime,
+            thumbnailUrl = currentThumbnailUrl
+        )
         binding.etUrl.text?.clear()
         binding.cardVideoInfo.visibility = View.GONE
 
         binding.etStartTime.text?.clear()
         binding.etEndTime.text?.clear()
         binding.cbMetadata.isChecked = false
-
+        binding.cbSubtitles.isChecked = false
         Toast.makeText(this, getString(R.string.toast_added_to_queue), Toast.LENGTH_SHORT).show()
     }
 

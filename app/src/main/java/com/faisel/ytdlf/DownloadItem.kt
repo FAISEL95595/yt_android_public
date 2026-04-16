@@ -17,6 +17,7 @@ data class DownloadItem(
     val isAudio: Boolean = false,
     val selectedQuality: String = "best",
     val embedMetadata: Boolean = false,
+    val downloadSubtitles: Boolean = false,
     val startTime: String? = null,
     val endTime: String? = null,
     val thumbnailUrl: String? = null

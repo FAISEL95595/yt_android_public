@@ -35,6 +35,7 @@ object DownloadManager {
         val isAudio = prefs.getBoolean("PREF_DEFAULT_AUDIO", false)
         val quality = prefs.getString(if (isAudio) "PREF_DEFAULT_AUDIO_QUALITY" else "PREF_DEFAULT_VIDEO_QUALITY", "best") ?: "best"
         val skipSsl = prefs.getBoolean("PREF_SKIP_SSL_DEFAULT", true)
+        val downloadSubtitles = prefs.getBoolean("PREF_DOWNLOAD_SUBTITLES_DEFAULT", false)
 
         backgroundScope.launch {
             try {
@@ -80,6 +81,7 @@ object DownloadManager {
                                             folderName = context.getString(R.string.title_auto_downloaded_playlist),
                                             playlistId = playlistId,
                                             quality = quality,
+                                            downloadSubtitles = downloadSubtitles,
                                             thumbnailUrl = "https://i.ytimg.com/vi/$id/hqdefault.jpg"
                                         )
                                     }
@@ -103,6 +105,7 @@ object DownloadManager {
                             isAudio = isAudio,
                             skipSsl = skipSsl,
                             quality = quality,
+                            downloadSubtitles = downloadSubtitles,
                             thumbnailUrl = info.thumbnail
                         )
                         Toast.makeText(context, context.getString(R.string.toast_download_added), Toast.LENGTH_SHORT).show()
@@ -149,6 +152,7 @@ object DownloadManager {
                     isAudio = obj.optBoolean("isAudio", false),
                     selectedQuality = obj.optString("selectedQuality", "best"),
                     embedMetadata = obj.optBoolean("embedMetadata", false),
+                    downloadSubtitles = obj.optBoolean("downloadSubtitles", false),
                     startTime = startTime,
                     endTime = endTime,
                     thumbnailUrl = thumbnailUrl
@@ -174,6 +178,7 @@ object DownloadManager {
                 put("isAudio", item.isAudio)
                 put("selectedQuality", item.selectedQuality)
                 put("embedMetadata", item.embedMetadata)
+                put("downloadSubtitles", item.downloadSubtitles)
                 put("startTime", item.startTime)
                 put("endTime", item.endTime)
                 put("thumbnailUrl", item.thumbnailUrl)
@@ -210,7 +215,9 @@ object DownloadManager {
     fun enqueueDownload(
         context: Context, url: String, title: String, isAudio: Boolean, skipSsl: Boolean,
         folderName: String? = null, playlistId: String? = null,
-        quality: String = "best", metadata: Boolean = false, startTime: String? = null, endTime: String? = null,
+        quality: String = "best", metadata: Boolean = false,
+        downloadSubtitles: Boolean = false,
+        startTime: String? = null, endTime: String? = null,
         thumbnailUrl: String? = null
     ) {
         val id = UUID.randomUUID().toString()
@@ -224,9 +231,25 @@ object DownloadManager {
 
         val filePath = "${finalDir.absolutePath}/$safeTitle.$ext"
 
+        val finalMetadata = if (isAudio) true else metadata
+
         val newItem = DownloadItem(
-            id, url, title, 0, DownloadStatus.PENDING, filePath, skipSsl,
-            folderName, playlistId, isAudio, quality, metadata, startTime, endTime, thumbnailUrl
+            id = id,
+            url = url,
+            title = title,
+            progress = 0,
+            status = DownloadStatus.PENDING,
+            filePath = filePath,
+            skipSsl = skipSsl,
+            folderName = folderName,
+            playlistId = playlistId,
+            isAudio = isAudio,
+            selectedQuality = quality,
+            embedMetadata = finalMetadata,
+            downloadSubtitles = downloadSubtitles,
+            startTime = startTime,
+            endTime = endTime,
+            thumbnailUrl = thumbnailUrl
         )
 
         downloadItems.add(newItem)

@@ -150,6 +150,8 @@ class DownloadOptionsBottomSheet : BottomSheetDialogFragment() {
         val spinnerQuality = view.findViewById<Spinner>(R.id.spinnerSheetQuality)
         val btnDownload = view.findViewById<Button>(R.id.btnSheetDownload)
 
+        val cbSheetSubtitles = view.findViewById<CheckBox>(R.id.cbSheetSubtitles)
+
         val rvPlaylist = view.findViewById<RecyclerView>(R.id.rvSheetPlaylist)
         val cbSelectAll = view.findViewById<CheckBox>(R.id.cbSheetSelectAll)
 
@@ -174,6 +176,9 @@ class DownloadOptionsBottomSheet : BottomSheetDialogFragment() {
         val isDefaultAudio = prefs.getBoolean("PREF_DEFAULT_AUDIO", false)
         toggleFormat.check(if (isDefaultAudio) R.id.btnSheetAudio else R.id.btnSheetVideo)
 
+        cbSheetSubtitles.visibility = if (isDefaultAudio) View.GONE else View.VISIBLE
+        cbSheetSubtitles.isChecked = prefs.getBoolean("PREF_DOWNLOAD_SUBTITLES_DEFAULT", false)
+
         fun updateQualitySpinner(isAudio: Boolean) {
             if (isAudio) {
                 qualitiesDisplay = arrayOf(getString(R.string.quality_best), getString(R.string.quality_medium), getString(R.string.quality_low))
@@ -192,13 +197,18 @@ class DownloadOptionsBottomSheet : BottomSheetDialogFragment() {
         updateQualitySpinner(isDefaultAudio)
 
         toggleFormat.addOnButtonCheckedListener { _, checkedId, isChecked ->
-            if (isChecked) updateQualitySpinner(checkedId == R.id.btnSheetAudio)
+            if (isChecked) {
+                val isAudioSelected = checkedId == R.id.btnSheetAudio
+                updateQualitySpinner(isAudioSelected)
+                cbSheetSubtitles.visibility = if (isAudioSelected) View.GONE else View.VISIBLE
+            }
         }
 
         btnDownload.setOnClickListener {
             val isAudio = toggleFormat.checkedButtonId == R.id.btnSheetAudio
             val quality = qualitiesValues[spinnerQuality.selectedItemPosition]
             val skipSsl = prefs.getBoolean("PREF_SKIP_SSL_DEFAULT", true)
+            val downloadSubtitles = cbSheetSubtitles.isChecked
 
             if (isPlaylist) {
                 val selectedItems = playlistItems.filter { it.isChecked }
@@ -216,6 +226,7 @@ class DownloadOptionsBottomSheet : BottomSheetDialogFragment() {
                         isAudio = isAudio,
                         skipSsl = skipSsl,
                         quality = quality,
+                        downloadSubtitles = downloadSubtitles,
                         folderName = "Shared Playlist",
                         playlistId = playlistId,
                         thumbnailUrl = "https://i.ytimg.com/vi/${item.id}/hqdefault.jpg"
@@ -230,6 +241,7 @@ class DownloadOptionsBottomSheet : BottomSheetDialogFragment() {
                     isAudio = isAudio,
                     skipSsl = skipSsl,
                     quality = quality,
+                    downloadSubtitles = downloadSubtitles,
                     thumbnailUrl = currentThumbnail
                 )
                 Toast.makeText(context, getString(R.string.toast_added_to_queue), Toast.LENGTH_SHORT).show()

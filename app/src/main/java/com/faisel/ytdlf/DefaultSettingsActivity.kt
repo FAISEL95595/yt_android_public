@@ -28,7 +28,7 @@ class DefaultSettingsActivity : AppCompatActivity() {
         setupSwitch(R.id.swAutoDownload, "PREF_AUTO_DOWNLOAD", false)
         setupSwitch(R.id.swPlaylistSubfolder, "PREF_PLAYLIST_SUBFOLDER", true)
         setupSwitch(R.id.swSkipSslDefault, "PREF_SKIP_SSL_DEFAULT", true)
-
+        setupSwitch(R.id.swDownloadSubtitlesDefault, "PREF_DOWNLOAD_SUBTITLES_DEFAULT", false)
         val rgFormat = findViewById<RadioGroup>(R.id.rgDefaultFormatGlobal)
         val isAudio = prefs.getBoolean("PREF_DEFAULT_AUDIO", false)
         rgFormat.check(if (isAudio) R.id.rbAudioGlobal else R.id.rbVideoGlobal)
